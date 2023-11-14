@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>TOCHKA</title>
 </head>
 <body>
   <header>
     <a href="#"><img src="#" alt="Точка"></a>
-    <p><img src="#" alt="Телефон">+7 909 151-08-70</p>
+    <p class="phonenumber"><img src="#" alt="Телефон">+7 909 151-08-70</p>
     <button type="button">Меню</button>
   </header>
   <main>
@@ -17,12 +19,12 @@
       <img src="#" alt="Фото в заголовке 1">
       <img src="#" alt="Фото в заголовке 2">
       <p>Съемочное пространство, оборудование и обслуживание от 3900 р/час</p>
-      <button type="button">Получить бесплатный тест-драйв</button>
+      <button type="button" class="btn_peach">Получить бесплатный тест-драйв</button>
     </section>
     <section>
       <h2>В нашей студии несколько зон с разным интерьером</h2>
-      <ul>
-        <li>
+      <ul class="without_marker">
+        <li class="zone_item block_item">
           <img src="#" alt="1 зона">
           <h3>Кастом</h3>
           <p>Большая студия с несколькими вариантами по сет-дизайну. Идеально подойдет для записи интервью, прямой трансляции и подкаста.</p>
@@ -30,7 +32,7 @@
           <p>От 4 000 ₽/час</p>
           <a href="">Подробнее о студии</a>
         </li>
-        <li>
+        <li class="zone_item block_item">
           <img src="#" alt="2 зона">
           <h3>Подкаст</h3>
           <p>Студия с уютным лофт-дизайном, в которой есть все необходимое для записи подкаста и его видеоверсии</p>
@@ -38,15 +40,15 @@
           <p>От 4 000 ₽/час</p>
           <a href="">Подробнее о студии</a>
         </li>
-        <li>
+        <li class="zone_item block_item">
           <img src="#" alt="3 зона">
           <h3>Вебинар</h3>
-          <p>Небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой разноцветных фонов, прозрачной доской и теле-суфлером</p>
+          <p> Небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой разноцветных фонов, прозрачной доской и теле-суфлером</p>
           <img src="#" alt="Стоимость">
           <p>От 4 000 ₽/час</p>
           <a href="">Подробнее о студии</a>
         </li>
-        <li>
+        <li class="zone_item block_item">
           <img src="#" alt="4 зона">
           <h3>Тут будет еще четвертая зона</h3>
           <p>Тут будет текст</p>
@@ -60,42 +62,44 @@
       <h2>
         Продумали всё до мелочей, чтобы освободить вашу голову от забот
       </h2>
-      <ul>
-        <li>
+      <ul class="without_marker">
+        <li class="comfort_item block_item">
           <img src="#" alt="Зона отдыха">
           <h3>Зона отдыха</h3>
           <p>Большая комната ожидания с водой, чаем и кофе в дрип-пакетах</p>
         </li>
-        <li>
+        <li class="comfort_item block_item">
           <img src="#" alt="Зона Playback">
           <h3>Зона Playback</h3>
           <p>Установлена плазма 55’, чтобы смотреть трансляцию из студии в режиме реального времени</p>
         </li>
-        <li>
+        <li class="comfort_item block_item">
           <img src="#" alt="Зона грима">
           <h3>Зона грима</h3>
           <p>Отдельное помещение с грим-постом, вешалкой и отпаривателем</p>
         </li>
-        <li>
+        <li class="comfort_item block_item">
           <img src="#" alt="Парковочные места">
           <h3>Парковочные места</h3>
           <p>2 парковочных места для наших гостей прямо под окнами в тихом, закрытом дворе</p>
         </li>
-        <li>
+        <li class="comfort_item_last block_item">
           <h3>Дополнительные услуги</h3>
-          <p>Видеомонтаж и пост-продакшн</p>
-          <p>Сведение подкастов</p>
-          <p>Создание эфирной графики</p>
-          <p>Продюсирование стримов</p>
-          <button type="button">Забронировать студию</button>
+          <ul>
+            <li>Видеомонтаж и пост-продакшн</li>
+            <li>Сведение подкастов</li>
+            <li>Создание эфирной графики</li>
+            <li>Продюсирование стримов</li>
+          </ul>
+          <button type="button" class="btn_dark">Забронировать студию</button>
         </li>
       </ul>
     </section>
     <section>
       <h2>Узнайте предварительную стоимость</h2>
       <p>Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.</p>
-        <img src="#" alt="">
-        <ul>
+        <ul class="radio_list block_item">
+          <li><img src="#" alt="Женщина с кофе"></li>
           <li>
           <p>Выберите студию</p>
             <input type="radio" value="custom" id="custom" name="studio" checked>
@@ -152,9 +156,9 @@
             <label for="live">Стрим</label>
           </li>
           <li>
-            <p>15 000 ₽</p>
-            <p>Предварительная стоимость</p>
-            <button type="button">Забронировать студию</button>
+            <p class="price">15 000 ₽</p>
+            <p class="price_text">Предварительная стоимость</p>
+            <button type="button" class="btn_peach">Забронировать студию</button>
           </li>
         </ul>
     </section>
@@ -163,37 +167,37 @@
         Установлено новое съемочное оборудование и осветительные приборы
       </h2>
       <p>Нажмите на интересующее оборудование</p>
-      <ul>
+      <ul class="without_marker">
         <li>
-          <button type="button">
+          <button type="button" class="equipment_item">
             <img src="#" alt="Камера">
             Видеокамеры Sony FX6 4K с ассортиментом оптики
           </button>
           <img src="#" alt="Камера">
         </li>
         <li>
-          <button type="button">
+          <button type="button" class="equipment_item">
             <img src="#" alt="Микрофоны">
             Микрофоны Октава МК-105 и радиопетлички Sennheiser
           </button>
           <img src="#" alt="Микрофоны">
         </li>
         <li>
-          <button type="button">
+          <button type="button" class="equipment_item">
             <img src="#" alt="Осветительные приборы">
             Осветительные приборы
           </button>
           <img src="#" alt="Свет">
         </li>
         <li>
-          <button type="button">
+          <button type="button" class="equipment_item">
             <img src="#" alt="Оборудование для записи">
             Оборудование для поканальной записи и онлайн-трансляций
           </button>
           <img src="#" alt="Оборудование для поканальной записи">
         </li>
         <li>
-          <button type="button">
+          <button type="button" class="equipment_item">
             <img src="#" alt="Акустический паралон">
             Акустический паралон, бас-ловушки и диффузоры для правильной акустики
           </button>
@@ -207,11 +211,12 @@
       </h2>
       <img src="#" alt="Схема">
     </section>
+    <div class = "peach_back">
     <section>
       <h2>
         Получите бесплтаный тест-драйв студии
       </h2>
-      <h3>
+      <h3 class="request_text">
         Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
       </h3>
       <ul>
@@ -220,13 +225,13 @@
         <li>Получить рекомендации от специалистов по работе в кадре</li>
       </ul>
       <div>
-        <button type="button">Получить тест-драйв</button>
+        <button type="button" class="btn_dark">Получить тест-драйв</button>
         <img src="#" alt="Девушка с микрофоном">
       </div>
     </section>
     <section>
       <h2>Снято в нашей студии</h2>
-      <ul>
+      <ul class="without_marker">
         <li>
           <iframe src="https://www.youtube.com/embed/LSaFJ-RGu_4?si=8OVbc4YSIEedjdhe" allowfullscreen></iframe>
         </li>
@@ -242,20 +247,20 @@
       <h2>
         Возьмём всю организацию и технические заботы на себя
       </h2>
-      <p>В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию</p>
-      <p>После окончания проекта – загрузим исходники на файлообменник при необходимости</p>
-      <a href="#">Забронировать</a>
+      <p class="dark_text">В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию</p>
+      <p class="dark_text">После окончания проекта – загрузим исходники на файлообменник при необходимости</p>
+      <a href="#" class="btn_dark">Забронировать</a>
     </section>
     <section>
       <h2>Закроем самые частые вопросы</h2>
       <h3>
         Какие Условия бронирования?
       </h3>
-      <p>Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.</p>
+      <p class="dark_text">Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.</p>
       <h3>
         Есть Парковка?
       </h3>
-      <p>На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.</p>
+      <p class="dark_text">На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.</p>
     </section>
     <section>
       <h2>
@@ -265,36 +270,34 @@
       <hr>
       <div>
         <img src="#" alt="email">
-        <p>hello@tochkakontenta.ru</p>
+        <p class="dark_text">hello@tochkakontenta.ru</p>
       </div>
       <hr>
       <div>
         <img src="#" alt="phone">
-        <p>+7 909 151-08-70</p>
+        <p class="dark_text">+7 909 151-08-70</p>
       </div>
       <hr>
       <div><a href=""><img src="#" alt="tg"></a><a href=""><img src="#" alt="wa"></a></div>
       <hr>
       <div>
         <img src="#" alt="clock">
-        <p>Работаем с 8:00 до 22:00</p>
-        <p>По предварительной записи</p>
+        <p class="dark_text">Работаем с 8:00 до 22:00</p>
+        <p class="dark_text">По предварительной записи</p>
       </div>
       <hr>
       <div>
         <img src="#" alt="geo">
-        <p>Москва, ул. Садовая-Каретная улица, 20с2</p>
+        <p class="dark_text">Москва, ул. Садовая-Каретная улица, 20с2</p>
       </div>
       <hr>
     </section>
+  </div>
   </main>
   <footer>
-  <div>
-      <img src="#" alt="Точка">
-      <h2>TOCHKA</h2>
-  </div>
+  <a href="#"><img src="#" alt="Точка"></a>
   <nav>
-    <ul>
+    <ul class="footer_menu without_marker">
       <li><a href="">Студии</a></li>
       <li><a href="">Кейсы</a></li>
       <li><a href="">Тест-драйв</a></li>

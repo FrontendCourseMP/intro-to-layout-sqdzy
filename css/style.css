@@ -1,0 +1,200 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Steelfish";
+  src: url(../fonts/steelfish\ rg.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Steelfish";
+  src: url(../fonts/steelfish\ rg.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --peach-color: #F49C89;
+  --dark-color: #34344E;
+  --light-blue-color: #ECEEF8;
+  font-size: 62.5%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark-color);
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--light-blue-color);
+  font-family: "Steelfish", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 110%;
+}
+
+h2 {
+  color: var(--light-blue-color);
+  font-family: "Steelfish", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 110%;
+}
+
+h3 {
+  color: var(--dark-color);
+  font-family: "Steelfish", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 110%;
+}
+
+p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+
+li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: var(--dark-color);
+}
+
+button {
+  line-height: 140%;
+}
+
+.phonenumber {
+  font-size: 1.5rem;
+}
+
+li p {
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--peach-color);
+}
+
+
+li a {
+  color: var(--peach-color);
+  text-decoration: underline;
+}
+
+.btn_dark {
+  background-color: var(--dark-color);
+  color: white;
+  border-style: none;
+  border-radius: 5rem;
+  padding: 1.3rem 3rem;
+}
+
+.btn_peach {
+  background-color: var(--peach-color);
+  color: white;
+  border-style: none;
+  border-radius: 5rem;
+  padding: 1.3rem 3rem;
+}
+
+.price {
+  font-family: "Steelfish", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.4rem;
+}
+
+.price_text {
+  opacity: 50%;
+}
+
+.request_text {
+  color: var(--dark-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.dark_text {
+  color: var(--dark-color);
+}
+
+.footer_menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.zone_item {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.comfort_item {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.comfort_item_last {
+  background-color: var(--peach-color);
+  border-radius: 10px;
+}
+
+.radio_list {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.equipment_item {
+  border-color: var(--peach-color);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.peach_back {
+  background-color: var(--peach-color);
+}
+
+.block_item {
+  padding-inline: 20px;
+  padding-block: 10px;
+  margin-inline: 20px;
+  margin-top: 10px;
+}
+
+.without_marker {
+  list-style-type: none;
+  padding-left: 0;
+}
