@@ -45,9 +45,9 @@ html {
 body {
   background-color: var(--dark-color);
   margin: 0 auto;
+  box-sizing: border-box; 
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
 }
 
 h1 {
@@ -83,6 +83,7 @@ p {
 }
 
 li {
+  list-style: none;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -94,7 +95,9 @@ button {
   line-height: 140%;
   cursor: pointer;
 }
-
+ul {
+  padding-inline: 0;
+}
 .phonenumber {
   font-size: 1.5rem;
 }
@@ -113,7 +116,45 @@ li a {
   color: var(--peach-color);
   text-decoration: underline;
 }
+section{
+  padding: 20px;
+}
 
+ul > p {
+  color: var(--dark-color);
+}
+.wrapper_section_middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header_logo {
+  order: 1;
+}
+
+.header_phone {
+  order: 2;
+}
+
+.header_menu {
+  order: 3;
+}
+
+.flex_inline_between {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.middle_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+  max-width: 360px;
+  min-width: 340px;
+}
 .btn_dark {
   background-color: var(--dark-color);
   color: white;
@@ -131,6 +172,7 @@ li a {
 }
 
 .price {
+  margin: 0;
   font-family: "Steelfish", sans-serif;
   font-weight: 400;
   font-size: 3rem;
@@ -139,6 +181,7 @@ li a {
 
 .price_text {
   opacity: 50%;
+  margin: 0;
 }
 
 .request_text {
@@ -191,11 +234,56 @@ li a {
 .block_item {
   padding-inline: 20px;
   padding-block: 10px;
-  margin-inline: 20px;
   margin-top: 10px;
 }
 
 .without_marker {
   list-style-type: none;
   padding-left: 0;
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid var(--peach-color);
+  background-color: var(--light-blue-color);
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: var(--peach-color);
+}
+
+.form_radio {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.radio_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.radio_elements {
+  display: grid;
+
+}
+
+.button_radio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.list_with_markers {
+  list-style-image: url();
 }

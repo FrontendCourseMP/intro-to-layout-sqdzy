@@ -8,13 +8,13 @@
   <title>TOCHKA</title>
 </head>
 <body>
-  <header>
-    <a href="#"><img src="#" alt="Точка"></a>
-    <p class="phonenumber"><img src="#" alt="Телефон">+7 909 151-08-70</p>
-    <button type="button">Меню</button>
+  <header class="middle_wrapper flex_inline_between">
+    <a href="#" class="header_element header_logo"><img src="#" alt="Точка"></a>
+    <p class="phonenumber header_element header_phone"><img src="#" alt="Телефон">+7 909 151-08-70</p>
+    <button type="button" class="header_element header_menu">Меню</button>
   </header>
   <main>
-    <section>
+    <section class="wrapper_section_middle">
       <h1>Студия для онлайн-трансляций, видеосъемки и записи подкастов</h1>
       <img src="#" alt="Фото в заголовке 1">
       <img src="#" alt="Фото в заголовке 2">
@@ -29,32 +29,40 @@
           <h3>Кастом</h3>
           <p>Большая студия с несколькими вариантами по сет-дизайну. Идеально подойдет для записи интервью, прямой трансляции и подкаста.</p>
           <img src="#" alt="Стоимость">
-          <p>От 4 000 ₽/час</p>
-          <a href="">Подробнее о студии</a>
+          <div class="flex_inline_between">
+            <p>От 4 000 ₽/час</p>
+            <a href="">Подробнее о студии</a>
+          </div>
         </li>
         <li class="zone_item block_item">
           <img src="#" alt="2 зона">
           <h3>Подкаст</h3>
           <p>Студия с уютным лофт-дизайном, в которой есть все необходимое для записи подкаста и его видеоверсии</p>
           <img src="#" alt="Стоимость">
-          <p>От 4 000 ₽/час</p>
-          <a href="">Подробнее о студии</a>
+          <div class="flex_inline_between">
+            <p>От 4 000 ₽/час</p>
+            <a href="">Подробнее о студии</a>
+          </div>
         </li>
         <li class="zone_item block_item">
           <img src="#" alt="3 зона">
           <h3>Вебинар</h3>
           <p> Небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой разноцветных фонов, прозрачной доской и теле-суфлером</p>
           <img src="#" alt="Стоимость">
-          <p>От 4 000 ₽/час</p>
-          <a href="">Подробнее о студии</a>
+          <div class="flex_inline_between">
+            <p>От 4 000 ₽/час</p>
+            <a href="">Подробнее о студии</a>
+          </div>
         </li>
         <li class="zone_item block_item">
           <img src="#" alt="4 зона">
           <h3>Тут будет еще четвертая зона</h3>
           <p>Тут будет текст</p>
           <img src="#" alt="Стоимость">
-          <p>От 4 000 ₽/час</p>
-          <a href="">Подробнее о студии</a>
+          <div class="flex_inline_between">
+            <p>От 4 000 ₽/час</p>
+            <a href="">Подробнее о студии</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -100,66 +108,100 @@
       <p>Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.</p>
         <ul class="radio_list block_item">
           <li><img src="#" alt="Женщина с кофе"></li>
-          <li>
           <p>Выберите студию</p>
+          <li class="radio_wrapper">
+          <div class="form_radio">
             <input type="radio" value="custom" id="custom" name="studio" checked>
             <label for="custom">Кастом</label>
-            <input type="radio" value="podcast" id="podcast" name="studio">
-            <label for="podcast">Подкаст</label>
-            <input type="radio" value="webinar" id="webinar" name="studio">
-            <label for="webinar">Вебинар</label>
-            <input type="radio" value="4-studio" id="4-studio" name="studio">
-            <label for="4-studio">Тут будет 4 студия</label>
-            <hr>
+          </div>
+            <div class="form_radio">
+              <input type="radio" value="podcast" id="podcast" name="studio">
+              <label for="podcast">Подкаст</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="webinar" id="webinar" name="studio">
+              <label for="webinar">Вебинар</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="4-studio" id="4-studio" name="studio">
+              <label for="4-studio">Тут будет 4 студия</label>
+            </div>
           </li>
-          <li>
-            <p>Продолжительность</p>
-            <input type="radio" value="1-2-hours" id="1-2-hours" name="durability" checked>
-            <label for="1-2-hours">1-2 часа</label>
-            <input type="radio" value="3-hours" id="3-hours" name="durability">
-            <label for="3-hours">3 часа</label>
-            <input type="radio" value="4-hours" id="4-hours" name="durability">
-            <label for="4-hours">4 часа</label>
-            <input type="radio" value="5-more" id="5-more" name="durability">
-            <label for="5-more">5 и более</label>
-            <hr>
+          <hr>
+          <p>Продолжительность</p>
+          <li class="radio_wrapper">
+            <div class="form_radio">
+              <input type="radio" value="1-2-hours" id="1-2-hours" name="durability" checked>
+              <label for="1-2-hours">1-2 часа</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="3-hours" id="3-hours" name="durability">
+              <label for="3-hours">3 часа</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="4-hours" id="4-hours" name="durability">
+              <label for="4-hours">4 часа</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="5-more" id="5-more" name="durability">
+              <label for="5-more">5 и более</label>
+            </div>
           </li>
-          <li>
-            <p>Кол-во камер</p>
-            <input type="radio" value="1-cam" id="1-cam" name="cameras" checked>
-            <label for="1-cam">1 камера</label>
-            <input type="radio" value="2-cam" id="2-cam" name="cameras">
-            <label for="2-cam">2 камеры</label>
-            <input type="radio" value="3-cam" id="3-cam" name="cameras">
-            <label for="3-cam">3 камеры</label>
-            <input type="radio" value="4-cam" id="4-cam" name="cameras">
-            <label for="4-cam">4 камеры</label>
-            <hr>
+          <hr>
+          <p>Кол-во камер</p>
+          <li class="radio_wrapper">
+            <div class="form_radio">
+              <input type="radio" value="1-cam" id="1-cam" name="cameras" checked>
+              <label for="1-cam">1 камера</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="2-cam" id="2-cam" name="cameras">
+              <label for="2-cam">2 камеры</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="3-cam" id="3-cam" name="cameras">
+              <label for="3-cam">3 камеры</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="4-cam" id="4-cam" name="cameras">
+              <label for="4-cam">4 камеры</label>
+            </div>
           </li>
-          <li>
-            <p>Кол-во героев в кадре</p>
-            <input type="radio" value="1-hero" id="1-hero" name="heroes" checked>
-            <label for="1-hero">1 человек</label>
-            <input type="radio" value="2-hero" id="2-hero" name="heroes">
-            <label for="2-hero">2 человека</label>
-            <input type="radio" value="3-hero" id="3-hero" name="heroes">
-            <label for="3-hero">3 человека</label>
-            <input type="radio" value="4-more" id="4-more" name="heroes">
-            <label for="4-more">4 и более</label>
-            <hr>
+          <hr>
+          <p>Кол-во героев в кадре</p>
+          <li class="radio_wrapper">
+            <div class="form_radio">
+              <input type="radio" value="1-hero" id="1-hero" name="heroes" checked>
+              <label for="1-hero">1 человек</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="2-hero" id="2-hero" name="heroes">
+              <label for="2-hero">2 человека</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="3-hero" id="3-hero" name="heroes">
+              <label for="3-hero">3 человека</label>
+            </div>
+            <div class="form_radio">
+              <input type="radio" value="4-more" id="4-more" name="heroes">
+              <label for="4-more">4 и более</label>
+            </div>
           </li>
-          <li>
-            <p>Тип услуги</p>
-            <input type="radio" value="record" id="record" name="service" checked>
-            <label for="record">Запись</label>
-            <input type="radio" value="live" id="live" name="service">
-            <label for="live">Стрим</label>
+          <hr>
+          <p>Тип услуги</p>
+          <li class="radio_wrapper">
+            <div class="form_radio">
+              <input type="radio" value="record" id="record" name="service" checked>
+              <label for="record">Запись</label>
+            </div>
+            <p class="price form_radio">15 000 ₽</p>
+            <div class="form_radio">
+              <input type="radio" value="live" id="live" name="service">
+              <label for="live">Стрим</label>
+            </div>
+            <p class="price_text form_radio">Предварительная стоимость</p>
           </li>
-          <li>
-            <p class="price">15 000 ₽</p>
-            <p class="price_text">Предварительная стоимость</p>
-            <button type="button" class="btn_peach">Забронировать студию</button>
-          </li>
+          <button type="button" class="btn_peach button_radio">Забронировать студию</button>
         </ul>
     </section>
     <section>
@@ -219,10 +261,10 @@
       <h3 class="request_text">
         Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
       </h3>
-      <ul>
-        <li>Познакомиться со всеми опциями студии</li>
-        <li>Научиться пользоваться основным оборудованием</li>
-        <li>Получить рекомендации от специалистов по работе в кадре</li>
+      <ul class="list_with_markers">
+        <li class="list_with_markers">Познакомиться со всеми опциями студии</li>
+        <li class="list_with_markers">Научиться пользоваться основным оборудованием</li>
+        <li class="list_with_markers">Получить рекомендации от специалистов по работе в кадре</li>
       </ul>
       <div>
         <button type="button" class="btn_dark">Получить тест-драйв</button>
