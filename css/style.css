@@ -95,6 +95,17 @@ button {
   line-height: 140%;
   cursor: pointer;
 }
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: black;
+  opacity: 30%;
+}
+
+.footer_hr {
+  width: 100%;
+  background-color: #ECEEF8;
+}
 ul {
   padding-inline: 0;
 }
@@ -123,6 +134,31 @@ section{
 ul > p {
   color: var(--dark-color);
 }
+
+footer {
+  min-height: 484px;
+}
+
+.middle_wrapper_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+  max-width: 360px;
+  min-width: 340px;
+}
+.footer_menu_wrapper {
+  display: flex;
+}
+
+.footer_menu_grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper_section_middle {
   display: flex;
   flex-direction: column;
@@ -130,6 +166,8 @@ ul > p {
   justify-content: center;
   text-align: center;
 }
+
+
 .header_logo {
   order: 1;
 }
@@ -194,7 +232,11 @@ ul > p {
 .dark_text {
   color: var(--dark-color);
 }
-
+.footer_menu {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .footer_menu a {
   color: white;
   text-decoration: none;
@@ -236,30 +278,28 @@ ul > p {
   padding-block: 10px;
   margin-top: 10px;
 }
-
+.socials a {
+  padding-right: 5px;
+}
 .without_marker {
   list-style-type: none;
   padding-left: 0;
 }
 
 input[type="radio"] {
-  /* remove standard background appearance */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* create custom radiobutton appearance */
   display: inline-block;
   width: 25px;
   height: 25px;
   padding: 3px;
-  /* background-color only for content */
   background-clip: content-box;
   border: 2px solid var(--peach-color);
   background-color: var(--light-blue-color);
   border-radius: 50%;
 }
 
-/* appearance for checked radiobutton */
 input[type="radio"]:checked {
   background-color: var(--peach-color);
 }
@@ -286,4 +326,8 @@ input[type="radio"]:checked {
 
 .list_with_markers {
   list-style-image: url();
+}
+
+.info_footer {
+  opacity: 50%;
 }
