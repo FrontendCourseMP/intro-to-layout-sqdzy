@@ -158,7 +158,10 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
+.fixed_width {
+  max-width: 360px;
+  margin: 0 auto;
+}
 .wrapper_section_middle {
   display: flex;
   flex-direction: column;
