@@ -232,6 +232,11 @@ footer {
 .dark_text {
   color: var(--dark-color);
 }
+
+.dark_text_opacity {
+  color: var(--dark-color);
+  opacity: 50%;
+}
 .footer_menu {
   margin-top: 0;
   display: grid;
@@ -328,6 +333,6 @@ input[type="radio"]:checked {
   list-style-image: url();
 }
 
-.info_footer {
-  opacity: 50%;
+.info_footer p {
+  color: rgba(255, 255, 255, 0.3);
 }
