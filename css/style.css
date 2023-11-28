@@ -62,7 +62,7 @@ h2 {
   color: var(--light-blue-color);
   font-family: "Steelfish", sans-serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 110%;
 }
 
@@ -102,6 +102,16 @@ hr {
   opacity: 30%;
 }
 
+.header_button {
+  background-color: transparent;
+  border: none;
+}
+
+.btn_h1 {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .footer_hr {
   width: 100%;
   background-color: #ECEEF8;
@@ -109,8 +119,24 @@ hr {
 ul {
   padding-inline: 0;
 }
+.in_h1_bottom {
+  margin-right: .2em;
+}
 .phonenumber {
   font-size: 1.5rem;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1_bottom_span {
+  text-align: right;
+}
+.phoneimg {
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
 
 li p {
@@ -151,10 +177,12 @@ footer {
 }
 .footer_menu_wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer_menu_grid {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -166,8 +194,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 
@@ -190,6 +218,7 @@ footer {
   text-align: center;
 }
 .middle_wrapper {
+  min-height: 58px;
   width: 100%;
   margin: 0 auto;
   padding: 0 8px;
@@ -251,19 +280,23 @@ footer {
 }
 
 .zone_item {
+  margin-top: 10px;
   background-color: white;
   border-radius: 10px;
 }
 
 .comfort_item {
+  margin-top: 10px;
   background-color: white;
   border-radius: 10px;
 }
 
 .comfort_item_last {
+  margin-top: 10px;
   background-color: var(--peach-color);
   border-radius: 10px;
 }
+
 
 .radio_list {
   background-color: white;
@@ -271,12 +304,50 @@ footer {
 }
 
 .equipment_item {
+  color: var(--dark-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   border-color: var(--peach-color);
   border-width: 3px;
   border-style: solid;
   border-radius: 10px;
+  width: 100%;
+  padding: .5em;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
+.flex_near {
+  display: flex;
+}
+
+.flex_near img {
+  vertical-align: middle;
+}
+
+.flex_near *{
+  padding-right: 5px;
+}
+.test_drive{
+  display: flex;
+  flex-direction: column;
+}
+
+.test_drive_bottom {
+  color: var(--dark-color);
+  text-align: right;
+}
+
+.test_drive_bottom_bot {
+  color: var(--dark-color);
+  text-align: left;
+}
+.org_btn {
+  margin-bottom: 40px;
+}
 .peach_back {
   background-color: var(--peach-color);
 }
@@ -284,7 +355,6 @@ footer {
 .block_item {
   padding-inline: 20px;
   padding-block: 10px;
-  margin-top: 10px;
 }
 .socials a {
   padding-right: 5px;
@@ -331,11 +401,26 @@ input[type="radio"]:checked {
   margin-top: 10px;
   width: 100%;
 }
-
 .list_with_markers {
-  list-style-image: url();
+  margin-left: 10px;
+}
+.list_with_markers li {
+  list-style-image: url(../images/line_black.svg);
 }
 
 .info_footer p {
   color: rgba(255, 255, 255, 0.3);
+}
+ 
+.comfort_item_last h3 {
+  color: var(--light-blue-color);
+}
+.comfort_item_last ul li{
+  color: var(--light-blue-color);
+  padding-block: 0.3em;
+  list-style-image: url(../images/line.svg);
+}   
+.comfort_item_last ul{
+  padding-left: 20px;
+  padding-bottom: 150px;
 }
