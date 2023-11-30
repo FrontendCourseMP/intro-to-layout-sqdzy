@@ -313,7 +313,14 @@ footer {
 .overflow_hidden {
   overflow-x: hidden;
 }
+figure {
+  display: flex;
+  margin: 0;
+}
 
+figure p {
+  margin-left: 5px;
+}
 .equipment_item {
   color: var(--dark-color);
   font-family: "Inter", sans-serif;
