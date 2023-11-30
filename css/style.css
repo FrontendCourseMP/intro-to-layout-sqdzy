@@ -318,6 +318,11 @@ figure {
   margin: 0;
 }
 
+.absolute_button {
+  position: absolute;
+  top: -10px;
+  
+}
 figure p {
   margin-left: 5px;
 }
