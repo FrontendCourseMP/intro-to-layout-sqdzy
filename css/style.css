@@ -112,6 +112,46 @@ hr {
   margin: 0 auto;
 }
 
+.img_in_zone {
+  height: 336px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img_in_comfort {
+  height: 261px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.coffee_girl {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.in_button_img {
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  top: 5px;
+  margin-top: 3px;
+}
+
+.big_img {
+  height:305px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.test_drive_img {
+  height: 388px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
 .footer_hr {
   width: 100%;
   background-color: #ECEEF8;
@@ -119,7 +159,20 @@ hr {
 ul {
   padding-inline: 0;
 }
+
+.in_h1_top {
+  width: 85px;
+  height: 41px;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+
 .in_h1_bottom {
+  width: 62px;
+  height: 41px;
+  object-fit: cover;
+  border-radius: 200px;
   margin-right: .2em;
 }
 .phonenumber {
