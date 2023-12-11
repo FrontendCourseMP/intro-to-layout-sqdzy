@@ -10,17 +10,26 @@
 <body>
   <header class="middle_wrapper flex_inline_between">
     <a href="#" class="header_element header_logo"><img src="images/logo.svg" alt="Точка"></a>
+    <p class="header_element metro header_metro"><img src="images/Groupmetro.svg" alt="metro" class = 'phoneimg'>8 минут от м. Маяковская</p>
+    <nav class="header_element menu_header">
+      <a href="#">Студии</a>
+      <a href="#">Тест-драйв</a>
+      <a href="#">Кейсы</a>
+      <a href="#">Контакты</a>
+    </nav>
     <p class="phonenumber header_element header_phone"><img src="images/Group.svg" alt="Телефон" class = 'phoneimg'>+7 909 151-08-70</p>
     <button type="button" class="header_button header_element header_menu"><img src="images/burger.svg" alt="Меню"></button>
   </header>
   <main>
-    <section class=" fixed_width">
+    <section class="fixed_width">
       <h1>
         <span class="h1_top_span">Студия для онлайн-трансляций, <img src="images/bdda16746d1298b6e6530a7108b794aa.jpg" alt="Фото в заголовке 1" class="in_h1_top"></span>
         <span class="h1_bottom_span"><img src="images/be514cd01a3335b88249663d5318f092.jpg" alt="Фото в заголовке 2" class="in_h1_bottom">видеосъемки и записи подкастов</span>
       </h1>
-      <p>Съемочное пространство, оборудование и обслуживание от 3900 р/час</p>
-      <button type="button" class="btn_peach btn_h1">Получить бесплатный тест-драйв</button>
+      <div class="flex_in_h1">
+        <p>Съемочное пространство, оборудование и обслуживание от 3900 р/час</p>
+        <button type="button" class="btn_peach btn_h1">Получить бесплатный тест-драйв</button>
+      </div>
     </section>
     <section  class = "fixed_width">
       <h2>В нашей студии несколько зон с разным интерьером</h2>
@@ -75,11 +84,11 @@
         </li>
       </ul>
     </section>
-    <section class = "fixed_width">
+    <section class = "fixed_width overflow_hidden">
       <h2>
         Продумали всё до мелочей, чтобы освободить вашу голову от забот
       </h2>
-      <ul>
+      <ul class="flex_box_row overflow_hidden">
         <li class="comfort_item">
           <img src="images/65bdc0eb83bae44074266e3110c17a9b.jpg" alt="Зона отдыха" width="100%" class="img_in_comfort">
           <div class="block_item">
@@ -116,7 +125,7 @@
             <li>Создание эфирной графики</li>
             <li>Продюсирование стримов</li>
           </ul>
-          <button type="button" class="btn_dark btn_h1">Забронировать студию</button>
+          <button type="button" class="btn_dark button_in_comfort">Забронировать студию</button>
         </li>
       </ul>
     </section>
@@ -238,17 +247,17 @@
         Установлено новое съемочное оборудование и осветительные приборы
       </h2>
       <p>Нажмите на интересующее оборудование</p>
-      <ul class="without_marker">
-        <li>
+      <ul class="without_marker equipment_list">
+        <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" width="100%" class="big_img">
+        <li style="order: 1;">
           <button type="button" class="equipment_item">
             <figure>
               <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" class="in_button_img">
               <p>Видеокамеры Sony FX6 4K с ассортиментом оптики</p>
             </figure>
           </button>
-          <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" width="100%" class="big_img">
         </li>
-        <li>
+        <li style="order: 3;">
           <button type="button" class="equipment_item">
             <figure>
               <img src="images/f687808cbb9b0385abc6cec2ebe23ad0.jpg" alt="Микрофоны" class="in_button_img">
@@ -256,7 +265,7 @@
             </figure>
           </button>
         </li>
-        <li>
+        <li style="order: 4;">
           <button type="button" class="equipment_item">
             <figure>
               <img src="images/1decd7a561bf5e0b7ba3b515566e9532.jpg" alt="Осветительные приборы" class="in_button_img">
@@ -264,7 +273,7 @@
             </figure>
           </button>
         </li>
-        <li>
+        <li style="order: 5;">
           <button type="button" class="equipment_item">
             <figure>
               <img src="images/f1e2de1144de9e822551deea3ea87ae6.jpg" alt="Оборудование для записи" class="in_button_img">
@@ -272,7 +281,7 @@
             </figure>
           </button>
         </li>
-        <li>
+        <li style="order: 6;">
           <button type="button" class="equipment_item">
             <figure>
               <img src="images/f9f973f71e1a60432d3be9defe5263cf.jpg" alt="Акустический паралон" class="in_button_img">
