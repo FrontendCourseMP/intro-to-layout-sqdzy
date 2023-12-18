@@ -49,3 +49,38 @@ button {
 button * {
   vertical-align: middle;
 }
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo_footer {
+  transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(20deg);
+}
+
+label:focus-within {
+  color: var(--peach-color);
+}
+
+input:required {
+  border-color:#f00;
+}
+
+dl {
+  max-width: 500px;
+  margin-inline: auto;
+  margin-block: 100px 0;
+}
+dt::first-letter {
+  font-size: 2em;
+}
+dd::after {
+  content: "🛈";
+}
+dl input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+dl li:nth-child(even) {
+  background-color: var(--peach-color);
+}

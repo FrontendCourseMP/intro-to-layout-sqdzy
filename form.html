@@ -22,39 +22,69 @@
   </header>
   <main>
     <form action="//httpbin.org/post" method="post" class="middle_wrapper fixed_width form_middle_flex">
-      <label for="fname">Имя</label>
-      <input type="text" id="fname" name="fname" placeholder="Ваше имя">
-      <label for="birth">Дата рождения</label>
-      <input type="date" id="birth" name="birth">
-      <label for="gender">Пол</label>
-      <div class="gender_form">
-        <input type="radio" id="male" name="gender" value="male" checked>
-        <label for="male">Мужской</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Женский</label>
-      </div>
-      <label for="pwd">Пароль*</label>
-      <input type="password" id="pwd" name="pwd" placeholder="Пароль (обязательно)">
-      <label for="email">Email*</label>
-      <input type="email" id="email" name="email" placeholder="Email (обязательно)">
-      <label for="phone">Телефон*</label>
-      <input type="tel" id="phone" name="phone" placeholder="Телефон (обязательно)">
-      <label for="time">Удобный интервал для связи</label>
-      <select id="time" name="time">
-        <option value="morning">Утро</option>
-        <option value="day">День</option>
-        <option value="evening">Вечер</option>
-        <option value="night">Ночь</option>
-      </select>
+      <label for="fname">Имя
+        <input type="text" id="fname" name="fname" placeholder="Ваше имя">
+      </label>
+      <label for="birth">Дата рождения
+        <input type="date" id="birth" name="birth">
+      </label>
+      <label for="gender">Пол
+        <div class="gender_form">
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="male">Мужской</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Женский</label>
+        </div>
+      </label>
+      <label for="pwd">Пароль*
+        <input type="password" id="pwd" name="pwd" placeholder="Пароль (обязательно)" required>
+      </label>
+      <label for="email">Email*
+        <input type="email" id="email" name="email" placeholder="Email (обязательно)" required>
+      </label>
+      <label for="phone">Телефон*
+        <input type="tel" id="phone" name="phone" placeholder="Телефон (обязательно)" required>
+      </label>
+      <label for="time">Удобный интервал для связи
+        <select id="time" name="time">
+          <option value="morning">Утро</option>
+          <option value="day">День</option>
+          <option value="evening">Вечер</option>
+          <option value="night">Ночь</option>
+        </select>
+      </label>
       <div class="buttons_in_from">
-        <button type="reset" class="btn_peach button_form"><span>Отправить</span><img src="images/send-alt-1-svgrepo-com.svg" alt="Отправить"></button>
-        <button type="submit" class="btn_peach button_form"><span>Очистить</span><img src="images/trash-bin-minimalistic-2-svgrepo-com.svg" alt="Корзина"></button>
+        <button type="submit" class="btn_peach button_form"><span>Отправить</span><img src="images/send-alt-1-svgrepo-com.svg" alt="Отправить"></button>
+        <button type="reset" class="btn_peach button_form"><span>Очистить</span><img src="images/trash-bin-minimalistic-2-svgrepo-com.svg" alt="Корзина"></button>
       </div>
     </form>
+    <form class="fixed_width middle_wrapper">
+      <dl>
+          <dt></dt>
+          <dd>
+              <ul>
+                  <li><input type="checkbox" id="pseudo1" checked><label for="pseudo1">:focus-within</label></li>
+                  <li><input type="checkbox" id="pseudo2" checked><label for="pseudo2">:required</label></li>
+                  <li><input type="checkbox" id="pseudo3" checked><label for="pseudo3">::first-letter</label></li>
+                  <li><input type="checkbox" id="pseudo4" checked><label for="pseudo4">::after</label></li>
+                  <li><input type="checkbox" id="pseudo5" checked><label for="pseudo5">:checked</label></li>
+                  <li><input type="checkbox" id="pseudo6" checked><label for="pseudo6">:nth-child</label></li>
+              </ul>
+          </dd>
+          <dt></dt>
+          <dd>
+              <ul>
+                  <li><input type="checkbox" id="pseudo7" checked><label for="pseudo7">:hover</label></li>
+                  <li><input type="checkbox" id="pseudo8" checked><label for="pseudo8">:focus</label></li>
+                  <li><input type="checkbox" id="pseudo9"><label for="pseudo9">::before</label></li>
+              </ul>
+          </dd>
+      </dl>
+  </form>
   </main>
   <footer class="middle_wrapper_footer">
     <div class="footer_menu_wrapper">
-      <a href="#"><img src="images/logo.svg" alt="Точка"></a>
+      <a href="#"><img src="images/logo.svg" alt="Точка" class="logo_footer"></a>
       <div class="footer_menu_grid">
         <ul class="footer_menu without_marker">
           <li><a href="">Студии</a></li>
