@@ -75,6 +75,7 @@
   }
   .big_img{
     order: 2;
+    position: absolute;
   }
 
   h2 {
@@ -224,6 +225,9 @@
 
 }
 
+ul>li {
+  overflow: hidden;
+}
 nav a {
   color: var(--light-blue-color);
   font-family: "Inter", sans-serif;

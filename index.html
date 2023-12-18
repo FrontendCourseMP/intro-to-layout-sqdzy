@@ -17,7 +17,9 @@
       <a href="#">Кейсы</a>
       <a href="#">Контакты</a>
     </nav>
-    <p class="phonenumber header_element header_phone"><img src="images/Group.svg" alt="Телефон" class = 'phoneimg'>+7 909 151-08-70</p>
+    <a href="tel:89091510870">
+      <p class="phonenumber header_element header_phone"><img src="images/Group.svg" alt="Телефон" class = 'phoneimg' >+7 909 151-08-70</p>
+    </a>
     <button type="button" class="header_button header_element header_menu"><img src="images/burger.svg" alt="Меню"></button>
   </header>
   <main>
@@ -132,115 +134,117 @@
     <section class = "fixed_width">
       <h2>Узнайте предварительную стоимость</h2>
       <p>Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.</p>
-      <div class="radio_list">
-        <img src="images/f47ef16f19d2ec8de012eb829dcac388.jpg" alt="Женщина с кофе" width="100%" class="width_item coffee_girl">
-          <ul class=" block_item">
-            <li>
-              <p>Выберите студию</p>
-            </li>
-            <li class="radio_wrapper">
-            <div class="form_radio">
-              <input type="radio" value="custom" id="custom" name="studio" checked>
-              <label for="custom">Кастом</label>
-            </div>
+      <form action="//httpbin.org/post" method="post" name="choose_plan">
+        <div class="radio_list">
+          <img src="images/f47ef16f19d2ec8de012eb829dcac388.jpg" alt="Женщина с кофе" width="100%" class="width_item coffee_girl">
+            <ul class=" block_item">
+              <li>
+                <p>Выберите студию</p>
+              </li>
+              <li class="radio_wrapper">
               <div class="form_radio">
-                <input type="radio" value="podcast" id="podcast" name="studio">
-                <label for="podcast">Подкаст</label>
+                <input type="radio" value="custom" id="custom" name="studio" checked>
+                <label for="custom">Кастом</label>
               </div>
-              <div class="form_radio">
-                <input type="radio" value="webinar" id="webinar" name="studio">
-                <label for="webinar">Вебинар</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="4-studio" id="4-studio" name="studio">
-                <label for="4-studio">Тут будет 4 студия</label>
-              </div>
-            </li>
-            <li>
-              <hr>
-              <p>Продолжительность</p>
-            </li>
-            <li class="radio_wrapper">
-              <div class="form_radio">
-                <input type="radio" value="1-2-hours" id="1-2-hours" name="durability" checked>
-                <label for="1-2-hours">1-2 часа</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="3-hours" id="3-hours" name="durability">
-                <label for="3-hours">3 часа</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="4-hours" id="4-hours" name="durability">
-                <label for="4-hours">4 часа</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="5-more" id="5-more" name="durability">
-                <label for="5-more">5 и более</label>
-              </div>
-            </li>
-            <li>
-              <hr>
-              <p>Кол-во камер</p>
-            </li>
-            <li class="radio_wrapper">
-              <div class="form_radio">
-                <input type="radio" value="1-cam" id="1-cam" name="cameras" checked>
-                <label for="1-cam">1 камера</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="2-cam" id="2-cam" name="cameras">
-                <label for="2-cam">2 камеры</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="3-cam" id="3-cam" name="cameras">
-                <label for="3-cam">3 камеры</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="4-cam" id="4-cam" name="cameras">
-                <label for="4-cam">4 камеры</label>
-              </div>
-            </li>
-            <li>
-              <hr>
-              <p>Кол-во героев в кадре</p>
-            </li>
-            <li class="radio_wrapper">
-              <div class="form_radio">
-                <input type="radio" value="1-hero" id="1-hero" name="heroes" checked>
-                <label for="1-hero">1 человек</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="2-hero" id="2-hero" name="heroes">
-                <label for="2-hero">2 человека</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="3-hero" id="3-hero" name="heroes">
-                <label for="3-hero">3 человека</label>
-              </div>
-              <div class="form_radio">
-                <input type="radio" value="4-more" id="4-more" name="heroes">
-                <label for="4-more">4 и более</label>
-              </div>
-            </li>
-            <li>
-              <hr>
-              <p>Тип услуги</p>
-            </li>
-            <li class="radio_wrapper">
-              <div class="form_radio">
-                <input type="radio" value="record" id="record" name="service" checked>
-                <label for="record">Запись</label>
-              </div>
-              <p class="price form_radio">15 000 ₽</p>
-              <div class="form_radio">
-                <input type="radio" value="live" id="live" name="service">
-                <label for="live">Стрим</label>
-              </div>
-              <p class="price_text form_radio">Предварительная стоимость</p>
-            </li>
-            <li><button type="button" class="btn_peach button_radio">Забронировать студию</button></li>
-          </ul>
-      </div>
+                <div class="form_radio">
+                  <input type="radio" value="podcast" id="podcast" name="studio">
+                  <label for="podcast">Подкаст</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="webinar" id="webinar" name="studio">
+                  <label for="webinar">Вебинар</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="4-studio" id="4-studio" name="studio">
+                  <label for="4-studio">Тут будет 4 студия</label>
+                </div>
+              </li>
+              <li>
+                <hr>
+                <p>Продолжительность</p>
+              </li>
+              <li class="radio_wrapper">
+                <div class="form_radio">
+                  <input type="radio" value="1-2-hours" id="1-2-hours" name="durability" checked>
+                  <label for="1-2-hours">1-2 часа</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="3-hours" id="3-hours" name="durability">
+                  <label for="3-hours">3 часа</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="4-hours" id="4-hours" name="durability">
+                  <label for="4-hours">4 часа</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="5-more" id="5-more" name="durability">
+                  <label for="5-more">5 и более</label>
+                </div>
+              </li>
+              <li>
+                <hr>
+                <p>Кол-во камер</p>
+              </li>
+              <li class="radio_wrapper">
+                <div class="form_radio">
+                  <input type="radio" value="1-cam" id="1-cam" name="cameras" checked>
+                  <label for="1-cam">1 камера</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="2-cam" id="2-cam" name="cameras">
+                  <label for="2-cam">2 камеры</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="3-cam" id="3-cam" name="cameras">
+                  <label for="3-cam">3 камеры</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="4-cam" id="4-cam" name="cameras">
+                  <label for="4-cam">4 камеры</label>
+                </div>
+              </li>
+              <li>
+                <hr>
+                <p>Кол-во героев в кадре</p>
+              </li>
+              <li class="radio_wrapper">
+                <div class="form_radio">
+                  <input type="radio" value="1-hero" id="1-hero" name="heroes" checked>
+                  <label for="1-hero">1 человек</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="2-hero" id="2-hero" name="heroes">
+                  <label for="2-hero">2 человека</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="3-hero" id="3-hero" name="heroes">
+                  <label for="3-hero">3 человека</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" value="4-more" id="4-more" name="heroes">
+                  <label for="4-more">4 и более</label>
+                </div>
+              </li>
+              <li>
+                <hr>
+                <p>Тип услуги</p>
+              </li>
+              <li class="radio_wrapper">
+                <div class="form_radio">
+                  <input type="radio" value="record" id="record" name="service" checked>
+                  <label for="record">Запись</label>
+                </div>
+                <p class="price form_radio">15 000 ₽</p>
+                <div class="form_radio">
+                  <input type="radio" value="live" id="live" name="service">
+                  <label for="live">Стрим</label>
+                </div>
+                <p class="price_text form_radio">Предварительная стоимость</p>
+              </li>
+              <li><button type="submit" class="btn_peach button_radio">Забронировать студию</button></li>
+            </ul>
+        </div>
+      </form>
     </section>
     <section class = "fixed_width">
       <h2>
@@ -248,7 +252,7 @@
       </h2>
       <p>Нажмите на интересующее оборудование</p>
       <ul class="without_marker equipment_list">
-        <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" width="100%" class="big_img">
+        <li><img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" width="100%" class="big_img"></li>
         <li style="order: 1;">
           <button type="button" class="equipment_item">
             <figure>
@@ -363,12 +367,16 @@
       <hr>
       <div class="flex_near">
         <img src="images/icon 02seti.svg" alt="email">
-        <p class="dark_text">hello@tochkakontenta.ru</p>
+        <a href="mailto:hello@tochkakontenta.ru">
+          <p class="dark_text">hello@tochkakontenta.ru</p>
+        </a>
       </div>
       <hr>
       <div class="flex_near">
         <img src="images/icon 01seti.svg" alt="phone">
-        <p class="dark_text">+7 909 151-08-70</p>
+        <a href="tel:89091510870">
+          <p class="dark_text">+7 909 151-08-70</p>
+        </a>
       </div>
       <hr>
       <div class="flex_near"><a href=""><img src="images/telegramseti.svg" alt="tg"></a><a href=""><img src="images/socialsseti.svg" alt="wa"></a></div>
@@ -403,9 +411,14 @@
         <a href=""><img src="images/socials-1.svg" alt="vk"></a>
         <a href=""><img src="images/socials-2.svg" alt="yt"></a>
       </div>
-        <p>hello@tochkakontenta.ru</p>
+        <a href="mailto:hello@tochkakontenta.ru">
+          <p>hello@tochkakontenta.ru</p>
+        </a>
         <a href="grid.html">GRID</a>
-        <p>+7 909 151-08-70</p>
+        <a href="form.html">FORM</a>
+        <a href="tel:89091510870">
+          <p>+7 909 151-08-70</p>
+        </a>
     </div>
   </div>
   <hr class="footer_hr">
