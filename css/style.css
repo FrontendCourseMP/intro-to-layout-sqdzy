@@ -225,6 +225,11 @@
 
 }
 
+*::selection {
+  color: var(--dark-color);
+  background-color: var(--light-blue-color);
+}
+
 ul>li {
   overflow: hidden;
 }
@@ -233,6 +238,15 @@ nav a {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   margin-right: 10px;
+  transition: 0.3s;
+}
+.menu_header a {
+  color: var(--light-blue-color);
+  transition: 0.3s;
+}
+.menu_header a:hover {
+  color: var(--peach-color);
+  transition: 0.3s;
 }
 body {
   background-color: var(--dark-color);
@@ -470,18 +484,36 @@ footer {
 }
 .btn_dark {
   background-color: var(--dark-color);
-  color: white;
+  color: var(--light-blue-color);
   border-style: none;
   border-radius: 5rem;
   padding: 1.3rem 3rem;
+  transition: 0.3s;
 }
+
+.btn_dark:hover {
+  background-color: var(--light-blue-color);
+  color: var(--dark-color);
+  border-style: none;
+  border-radius: 5rem;
+  padding: 1.3rem 3rem;
+  transition: 0.3s;
+}
+
 
 .btn_peach {
   background-color: var(--peach-color);
-  color: white;
+  color: var(--light-blue-color);
   border-style: none;
   border-radius: 5rem;
   padding: 1.3rem 3rem;
+  transition: 0.3s;
+}
+
+.btn_peach:hover {
+  background-color: var(--light-blue-color);
+  color: var(--peach-color);
+  transition: 0.3s;
 }
 
 .price {
@@ -497,6 +529,21 @@ footer {
   margin: 0;
 }
 
+.zone_item a:hover {
+    color: var(--dark-color);
+    transition: 0.3s;
+}
+
+.zone_item a {
+  color: var(--peach-color);
+  transition: 0.3s;
+}
+
+.radio_list button:hover {
+  background-color: var(--dark-color);
+  color: var(--light-blue-color);
+  transform: 0.3s;
+}
 .request_text {
   color: var(--dark-color);
   font-family: "Inter", sans-serif;
@@ -585,10 +632,74 @@ figure p {
   width: 100%;
   padding: .5em;
   margin-block: 5px;
+  transition: 0.3s;
+}
+
+.equipment_item:hover {
+  color: var(--light-blue-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border-color: var(--peach-color);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 100%;
+  padding: .5em;
+  margin-block: 5px;
+  background-color: var(--peach-color);
 }
 
 .flex_near {
   display: flex;
+}
+
+.flex_near a .dark_text {
+  color: var(--dark-color);
+  transition: 0.3s;
+}
+
+.flex_near a .dark_text:hover {
+  color: var(--light-blue-color);
+  transition: 0.3s;
+}
+
+.flex_near img {
+  scale: 1;
+  transition: 0.3s;
+}
+.flex_near img:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+.socials img {
+  scale: 1;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+.footer_menu_grid a {
+  color: var(--light-blue-color);
+  transition: 0.3s;
+}
+
+.footer_menu_grid a:hover {
+  color: var(--peach-color);
+  transition: 0.3s;
+}
+
+.footer_menu_grid a p {
+  color: var(--light-blue-color);
+  transition: 0.3s;
+}
+
+.footer_menu_grid a p:hover {
+  color: var(--peach-color);
+  transition: 0.3s;
 }
 
 .flex_near img {
