@@ -31,7 +31,7 @@
 }
 
 :root {
-  --peach-color: #F49C89;
+  --peach-color: #ce553a;
   --dark-color: #34344E;
   --light-blue-color: #ECEEF8;
   font-size: 62.5%;
@@ -470,7 +470,17 @@ hr {
   object-fit: cover;
   border-radius: 10px;
 }
-
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .img_in_comfort {
   height: 261px;
   object-fit: cover;
