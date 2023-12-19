@@ -73,13 +73,24 @@
     display: flex;
     flex-direction: column;
   }
+  .absolute_button {
+    position: absolute;
+    top: -10px; 
+  }
   .big_img{
     order: 2;
-    position: absolute;
+    width: 100%;
+    height: 305px;
+    object-fit: cover;
   }
 
   h2 {
     font-size: 4rem;
+  }
+
+  .button_radio {
+    margin-top: 10px;
+    width: 100%;
   }
 
   
@@ -98,6 +109,12 @@
       align-items: center;
       text-align: center;
     }
+    .absolute_button {
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      
+    }
     .zone_item {
       margin-top: 10px;
       background-color: white;
@@ -110,7 +127,7 @@
       justify-content: space-around; /* Adjust as needed */
     }
     h1{
-      font-size: 7rem;
+      font-size: 6rem;
     }
     .in_h1_top{
       width: 120px;
@@ -123,32 +140,55 @@
     .flex_in_h1 {
       display: flex;
       justify-content: center;
+      flex-direction: row;
     }
     .btn_h1 {
       order: -1;
       margin-right: 20px;
     }
-    .coffee_girl {
-      order: 2;
-      max-width: 472px;
-    }
-    .radio_list{
-      flex-direction: row;
-    }
     
-  .radio_list ul {
-    width: 50%;
-  }
   .equipment_list {
     display: flex;
     flex-direction: column;
   }
   .big_img{
     order: 2;
+    width: 100%;
+    height: 305px;
+    object-fit: cover;
   }
-  
+  .radio_list{
+    flex-direction: column;
+    position: relative;
+  }
   h2 {
     font-size: 7rem;
+  }
+  .list_radio_button {
+    display: flex;
+    justify-content: end;
+  }
+  .button_radio {
+    width: 50%;
+  }
+  .request_text_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .end_text_wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .end_text_wrapper_second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .map {
+    order: 3;
   }
 
 }
@@ -163,6 +203,21 @@
   .menu_header {
     display: initial;
     order: 2;
+  }
+  .absolute_button {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    
+  }
+  .request_text_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .end_text_wrapper {
+    display: flex;
+    flex-direction: row;
   }
   .flex_inline_between {
     justify-content: space-between;
@@ -192,6 +247,9 @@
     width: 170px;
     height: 80px;
   }
+  .map {
+    order: 3;
+  }
   .flex_in_h1 {
     display: flex;
     justify-content: center;
@@ -215,12 +273,40 @@
     display: flex;
     flex-direction: column;
   }
-  .big_img{
-    order: 2;
-  }
   
   h2 {
     font-size: 9rem;
+  }
+
+  .button_radio {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .radio_list {
+    position: relative;
+  }
+
+  .choose_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .big_img {
+    height: 400px;
+    width: 50%;
+    order: 2;
+    object-fit: fill;
+    margin-left: 10px;
+  }
+  .end_text_wrapper_second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
 }
@@ -344,8 +430,6 @@ hr {
 }
 
 .big_img {
-  height:305px;
-  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -356,6 +440,11 @@ hr {
 
 }
 
+.test_drive_main_wrapper {
+  position: relative; 
+  max-width: 1010px; 
+  margin: 0 auto;
+}
 .footer_hr {
   width: 100%;
   background-color: #ECEEF8;
@@ -613,11 +702,6 @@ figure {
   margin: 0;
 }
 
-.absolute_button {
-  position: absolute;
-  top: -10px;
-  
-}
 figure p {
   margin-left: 5px;
 }
@@ -716,7 +800,7 @@ figure p {
 
 .test_drive_bottom {
   color: var(--dark-color);
-  text-align: right;
+  text-align: center;
 }
 
 .test_drive_bottom_bot {
@@ -775,10 +859,6 @@ input[type="radio"]:checked {
 
 }
 
-.button_radio {
-  margin-top: 10px;
-  width: 100%;
-}
 .list_with_markers {
   margin-left: 10px;
 }
@@ -801,4 +881,28 @@ input[type="radio"]:checked {
 .comfort_item_last ul{
   padding-left: 20px;
   padding-bottom: 150px;
+}
+.tarif_target {
+  position: fixed;
+  background-color: var(--light-blue-color);
+  color: var(--peach-color);
+  padding-inline: 5px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+.tarif_target {
+  position: fixed;
+  background-color: var(--light-blue-color);
+  color: var(--peach-color);
+  padding-inline: 5px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  transform: translateY(-200%);
+}
+
+.tarif_target:focus {
+  transform: translateY(20%);
 }

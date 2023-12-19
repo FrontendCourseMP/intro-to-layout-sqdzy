@@ -9,6 +9,7 @@
 </head>
 <body>
   <header class="middle_wrapper flex_inline_between">
+    <a href="#plan_choose" class="tarif_target">Перейти к выбору тарифа</a>
     <a href="#" class="header_element header_logo"><img src="images/logo.svg" alt="Точка"></a>
     <p class="header_element metro header_metro"><img src="images/Groupmetro.svg" alt="metro" class = 'phoneimg'>8 минут от м. Маяковская</p>
     <nav class="header_element menu_header">
@@ -134,7 +135,7 @@
     <section class = "fixed_width">
       <h2>Узнайте предварительную стоимость</h2>
       <p>Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.</p>
-      <form action="//httpbin.org/post" method="post" name="choose_plan">
+      <form action="//httpbin.org/post" method="post" name="choose_plan" id="plan_choose">
         <div class="radio_list">
           <img src="images/f47ef16f19d2ec8de012eb829dcac388.jpg" alt="Женщина с кофе" width="100%" class="width_item coffee_girl">
             <ul class=" block_item">
@@ -241,7 +242,7 @@
                 </div>
                 <p class="price_text form_radio">Предварительная стоимость</p>
               </li>
-              <li><button type="submit" class="btn_peach button_radio">Забронировать студию</button></li>
+              <li class="list_radio_button"><button type="submit" class="btn_peach button_radio">Забронировать студию</button></li>
             </ul>
         </div>
       </form>
@@ -251,49 +252,51 @@
         Установлено новое съемочное оборудование и осветительные приборы
       </h2>
       <p>Нажмите на интересующее оборудование</p>
-      <ul class="without_marker equipment_list">
-        <li><img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" width="100%" class="big_img"></li>
-        <li style="order: 1;">
-          <button type="button" class="equipment_item">
-            <figure>
-              <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" class="in_button_img">
-              <p>Видеокамеры Sony FX6 4K с ассортиментом оптики</p>
-            </figure>
-          </button>
-        </li>
-        <li style="order: 3;">
-          <button type="button" class="equipment_item">
-            <figure>
-              <img src="images/f687808cbb9b0385abc6cec2ebe23ad0.jpg" alt="Микрофоны" class="in_button_img">
-              <p>Микрофоны Октава МК-105 и радиопетлички Sennheiser</p>
-            </figure>
-          </button>
-        </li>
-        <li style="order: 4;">
-          <button type="button" class="equipment_item">
-            <figure>
-              <img src="images/1decd7a561bf5e0b7ba3b515566e9532.jpg" alt="Осветительные приборы" class="in_button_img">
-              <p>Осветительные приборы, освещение и лампы</p>
-            </figure>
-          </button>
-        </li>
-        <li style="order: 5;">
-          <button type="button" class="equipment_item">
-            <figure>
-              <img src="images/f1e2de1144de9e822551deea3ea87ae6.jpg" alt="Оборудование для записи" class="in_button_img">
-              <p>Оборудование для поканальной записи и онлайн-трансляций</p>
-            </figure>
-          </button>
-        </li>
-        <li style="order: 6;">
-          <button type="button" class="equipment_item">
-            <figure>
-              <img src="images/f9f973f71e1a60432d3be9defe5263cf.jpg" alt="Акустический паралон" class="in_button_img">
-              <p>Акустический паралон, бас-ловушки и диффузоры для правильной акустики</p>
-            </figure>
-          </button>
-        </li>
-      </ul>
+      <div class="choose_buttons">
+        <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" class="big_img">
+        <ul class="without_marker equipment_list">
+          <li style="order: 1;">
+            <button type="button" class="equipment_item">
+              <figure>
+                <img src="images/5afb705b1048cdb07e80cd1bf2194b54.jpg" alt="Камера" class="in_button_img">
+                <p>Видеокамеры Sony FX6 4K с ассортиментом оптики</p>
+              </figure>
+            </button>
+          </li>
+          <li style="order: 3;">
+            <button type="button" class="equipment_item">
+              <figure>
+                <img src="images/f687808cbb9b0385abc6cec2ebe23ad0.jpg" alt="Микрофоны" class="in_button_img">
+                <p>Микрофоны Октава МК-105 и радиопетлички Sennheiser</p>
+              </figure>
+            </button>
+          </li>
+          <li style="order: 4;">
+            <button type="button" class="equipment_item">
+              <figure>
+                <img src="images/1decd7a561bf5e0b7ba3b515566e9532.jpg" alt="Осветительные приборы" class="in_button_img">
+                <p>Осветительные приборы, освещение и лампы</p>
+              </figure>
+            </button>
+          </li>
+          <li style="order: 5;">
+            <button type="button" class="equipment_item">
+              <figure>
+                <img src="images/f1e2de1144de9e822551deea3ea87ae6.jpg" alt="Оборудование для записи" class="in_button_img">
+                <p>Оборудование для поканальной записи и онлайн-трансляций</p>
+              </figure>
+            </button>
+          </li>
+          <li style="order: 6;">
+            <button type="button" class="equipment_item">
+              <figure>
+                <img src="images/f9f973f71e1a60432d3be9defe5263cf.jpg" alt="Акустический паралон" class="in_button_img">
+                <p>Акустический паралон, бас-ловушки и диффузоры для правильной акустики</p>
+              </figure>
+            </button>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class = "fixed_width">
       <h2>
@@ -307,15 +310,17 @@
         <span>Получите бесплатный</span>
         <span class="test_drive_bottom">тест-драйв студии</span>
       </h2>
-      <h3 class="request_text">
-        Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
-      </h3>
-      <ul class="list_with_markers">
-        <li class="list_with_markers">Познакомиться со всеми опциями студии</li>
-        <li class="list_with_markers">Научиться пользоваться основным оборудованием</li>
-        <li class="list_with_markers">Получить рекомендации от специалистов по работе в кадре</li>
-      </ul>
-      <div style="position: relative;">
+      <div class="request_text_wrapper">
+        <h3 class="request_text">
+          Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
+        </h3>
+        <ul class="list_with_markers">
+          <li class="list_with_markers">Познакомиться со всеми опциями студии</li>
+          <li class="list_with_markers">Научиться пользоваться основным оборудованием</li>
+          <li class="list_with_markers">Получить рекомендации от специалистов по работе в кадре</li>
+        </ul>
+      </div>
+      <div class="test_drive_main_wrapper">
         <button type="button" class="btn_dark absolute_button">Получить тест-драйв</button>
         <img src="images/edee539cb32aaca31b02cabc2b44bfd8.jpg" alt="Девушка с микрофоном" width="100%" class="test_drive_img">
       </div>
@@ -337,25 +342,32 @@
     <section class = "fixed_width">
       <h2 class="test_drive">
         <span>Возьмём всю организацию</span>
-        <span class="test_drive_bottom">и технические заботы</span>
-        <span class="test_drive_bottom_bot">на себя</span>
+        <span class="test_drive_bottom">и технические заботы на себя</span>
       </h2>
-      <p class="dark_text">В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию</p>
-      <p class="dark_text org_btn">После окончания проекта – загрузим исходники на файлообменник при необходимости</p>
-      <a href="#" class="btn_dark">Забронировать</a>
+      <div class="end_text_wrapper">
+        <p class="dark_text">В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию</p>
+        <div class="end_text">
+          <p class="dark_text org_btn">После окончания проекта – загрузим исходники на файлообменник при необходимости</p>
+          <a href="#" class="btn_dark">Забронировать</a>
+        </div>
+      </div>
     </section>
     <section class = "fixed_width">
       <h2>Закроем самые частые вопросы</h2>
       <hr>
-      <h3>
-        Какие Условия бронирования?
-      </h3>
-      <p class="dark_text">Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.</p>
+      <div class="end_text_wrapper_second">
+        <h3>
+          Какие Условия бронирования?
+        </h3>
+        <p class="dark_text">Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.</p>
+      </div>
       <hr>
-      <h3>
-        Есть Парковка?
-      </h3>
-      <p class="dark_text">На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.</p>
+      <div class="end_text_wrapper_second">
+        <h3>
+          Есть Парковка?
+        </h3>
+        <p class="dark_text">На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.</p>
+      </div>
       <hr>
     </section>
     <section class = "fixed_width">
@@ -363,35 +375,39 @@
         <span>Свяжитесь с нами</span>
         <span class="test_drive_bottom">по любому вопросу</span>
       </h2>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae17c3401b4b9ceff31917127dd95e1e5b85e9267e31bf28d012488bfb0d88720&amp;source=constructor" class="map"></iframe>
-      <hr>
-      <div class="flex_near">
-        <img src="images/icon 02seti.svg" alt="email">
-        <a href="mailto:hello@tochkakontenta.ru">
-          <p class="dark_text">hello@tochkakontenta.ru</p>
-        </a>
+      <div class="end_text_wrapper_second">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae17c3401b4b9ceff31917127dd95e1e5b85e9267e31bf28d012488bfb0d88720&amp;source=constructor" class="map"></iframe>
+        <div class="wrapper_bottom_menu">
+          <hr>
+          <div class="flex_near">
+            <img src="images/icon 02seti.svg" alt="email">
+            <a href="mailto:hello@tochkakontenta.ru">
+              <p class="dark_text">hello@tochkakontenta.ru</p>
+            </a>
+          </div>
+          <hr>
+          <div class="flex_near">
+            <img src="images/icon 01seti.svg" alt="phone">
+            <a href="tel:89091510870">
+              <p class="dark_text">+7 909 151-08-70</p>
+            </a>
+          </div>
+          <hr>
+          <div class="flex_near"><a href=""><img src="images/telegramseti.svg" alt="tg"></a><a href=""><img src="images/socialsseti.svg" alt="wa"></a></div>
+          <hr>
+          <div class="flex_near">
+            <img src="images/icon 03seti.svg" alt="clock">
+            <p class="dark_text">Работаем с 8:00 до 22:00</p>
+            <p class="dark_text_opacity">По предварительной записи</p>
+          </div>
+          <hr>
+          <div class="flex_near">
+            <img src="images/icon 04seti.svg" alt="geo">
+            <p class="dark_text">Москва, ул. Садовая-Каретная улица, 20с2</p>
+          </div>
+          <hr>
+        </div>
       </div>
-      <hr>
-      <div class="flex_near">
-        <img src="images/icon 01seti.svg" alt="phone">
-        <a href="tel:89091510870">
-          <p class="dark_text">+7 909 151-08-70</p>
-        </a>
-      </div>
-      <hr>
-      <div class="flex_near"><a href=""><img src="images/telegramseti.svg" alt="tg"></a><a href=""><img src="images/socialsseti.svg" alt="wa"></a></div>
-      <hr>
-      <div class="flex_near">
-        <img src="images/icon 03seti.svg" alt="clock">
-        <p class="dark_text">Работаем с 8:00 до 22:00</p>
-        <p class="dark_text_opacity">По предварительной записи</p>
-      </div>
-      <hr>
-      <div class="flex_near">
-        <img src="images/icon 04seti.svg" alt="geo">
-        <p class="dark_text">Москва, ул. Садовая-Каретная улица, 20с2</p>
-      </div>
-      <hr>
     </section>
   </div>
   </main>
