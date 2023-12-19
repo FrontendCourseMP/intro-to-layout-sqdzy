@@ -1,0 +1,58 @@
+html, body { height: 100%;}
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+
+:root {
+  --peach-color: #F49C89;
+  --dark-color: #34344E;
+  --light-blue-color: #ECEEF8;
+  font-size: 62.5%;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.text_begit {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.text_begit p {
+  position: absolute;
+  color: var(--light-blue-color);
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  transform: translateX(100%);
+  animation: text_begit 10s  infinite;
+}
+
+@keyframes text_begit {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}

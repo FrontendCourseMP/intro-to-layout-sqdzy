@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+.strip {
+  box-sizing: content-box;
+  border-radius: 0;
+  border: 2px solid black;
+}
+
+.mondrian {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.strip1 {
+  border-radius: 10px 0 0 0;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: red;
+}
+
+.strip2 {
+  grid-column: span 2 / span 2;
+  background-color: #fff;
+}
+
+.strip3 {
+  column-span: 1;
+  background-color: #fff;
+}
+
+.strip4 {
+  border-radius: 0 10px 0 0;
+  column-span: 1;
+  background-color: #fff;
+}
+
+.strip5 {
+  grid-column: span 2 / span 2;
+  background-color: #fff;
+}
+
+.strip6 {
+  grid-column: span 2 / span 2;
+  background-color: #fff;
+}
+
+.strip7 {
+  grid-row: span 2 / span 2;
+  background-color: #fff;
+}
+
+.strip8 {
+  grid-column: span 2 / span 2;
+  background-color: #fff;
+}
+
+.strip9 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: yellow;
+}
+
+.strip10 {
+  background: #000;
+  grid-column: span 2;
+}
+
+.strip11 {
+  grid-row: span 2;
+  background-color: yellow;
+}
+
+.strip12 {
+  background-color: yellow;
+  grid-row: span 2;
+  border-radius: 0 0 0 10px;
+}
+
+.strip13 {
+  background-color: #fff;
+  grid-row: span 2;
+}
+
+.strip14 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: red;
+}
+
+.strip15 {
+  background-color: #fff;
+  border-radius: 0 0 10px 0;
+}
+
+.graphs {
+  display: grid;
+  margin: 100px auto;
+  width: 800px;
+  height: 800px;
+  grid-template-areas:
+      "sidebar graph1 graph1 graph1 graph1 graph1 graph1"
+      "sidebar graph2 graph2 graph3 graph3 graph4 graph4"
+      "sidebar graph5 graph5 graph5 graph6 graph6 graph6"
+  ;
+  grid-template-columns: 200px repeat(6, 70px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px 10px;
+  place-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.graphs div {
+  height: 100%;
+}
+
+
+.sidebar {
+  grid-area: sidebar;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar a {
+  color: white;
+  margin: 10px 0;
+}
+
+.graph1 {
+  grid-area: graph1;
+}
+
+.graph2 {
+  grid-area: graph2;
+}
+
+.graph3 {
+  grid-area: graph3;
+}
+
+.graph4 {
+  grid-area: graph4;
+}
+
+.graph5 {
+  grid-area: graph5;
+}
+
+.graph6 {
+  grid-area: graph6;
+}
+
+.ram {
+  max-width: 1440px;
+  margin: 100px auto;
+  height: 400px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.ram>div {
+  display: grid;
+  grid-template: "a" 1fr;
+  width: 50%;
+  min-width: 180px;
+  height: auto;
+  aspect-ratio: 1;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.ram>div>img {
+  grid-area: a;
+  object-fit: cover;
+  height: 176px;
+  width: 176px;
+  border-radius: 10px;
+}
+
+.ram>div>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  grid-area: a;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.ram>div>a:hover {
+  opacity: 1;
+  font-size: 3rem;
+  transition: all 200ms;
+}

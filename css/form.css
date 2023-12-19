@@ -1,0 +1,86 @@
+:root {
+  --peach-color: #F49C89;
+  --dark-color: #34344E;
+  --light-blue-color: #ECEEF8;
+  font-size: 62.5%;
+}
+
+html, body { height: 100%;}
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+label {
+  color: var(--light-blue-color);
+}
+form input{
+  margin-bottom: 10px;
+}
+.form_middle_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.gender_form * {
+  vertical-align: middle;
+}
+
+.button_form {
+  margin: 10px 10px 0px 0px;
+  width: 150px;
+}
+.buttons_in_from {
+  display: flex;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+button * {
+  vertical-align: middle;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo_footer {
+  transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(20deg);
+}
+
+label:focus-within {
+  color: var(--peach-color);
+}
+
+input:required {
+  border-color:#f00;
+}
+
+dl {
+  max-width: 500px;
+  margin-inline: auto;
+  margin-block: 100px 0;
+}
+dt::first-letter {
+  font-size: 2em;
+}
+dd::after {
+  content: "🛈";
+}
+dl input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+dl li:nth-child(even) {
+  background-color: var(--peach-color);
+}
