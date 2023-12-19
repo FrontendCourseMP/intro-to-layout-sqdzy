@@ -41,6 +41,9 @@
   .metro {
     display: none;
   }
+  .h1_bottom_span {
+    text-align: right;
+  }
   .menu_header {
     display: none;
   }
@@ -56,10 +59,17 @@
   .in_h1_top{
     width: 62px;
     height: 41px;
+    display: initial;
   }
   .in_h1_bottom {
     width: 62px;
     height: 41px;
+    display: initial;
+  }
+  .in_h1_bottom_second {
+    width: 170px;
+    height: 80px;
+    display: none;
   }
   .flex_in_h1 {
     display: flex;
@@ -91,6 +101,9 @@
   .button_radio {
     margin-top: 10px;
     width: 100%;
+  }
+  .in_h1_bottom_second_bot {
+    display: none;
   }
 
   
@@ -132,10 +145,23 @@
     .in_h1_top{
       width: 120px;
       height: 60px;
+      display: none;
     }
     .in_h1_bottom {
       width: 120px;
       height: 60px;
+      display: none;
+    }
+    .h1_display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+    .in_h1_bottom_second {
+      width: 120px;
+      height: 60px;
+      display: initial;
     }
     .flex_in_h1 {
       display: flex;
@@ -150,6 +176,16 @@
   .equipment_list {
     display: flex;
     flex-direction: column;
+  }
+  .in_h1_bottom_second_bot {
+    display: initial;
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 20px;
+    vertical-align: middle;
+
   }
   .big_img{
     order: 2;
@@ -197,6 +233,15 @@
   .header_button {
     display: none;
   }
+  .h1_display {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .h1_display * {
+    text-align: left;
+  }
   .metro {
     display: initial;
   }
@@ -242,10 +287,28 @@
   .in_h1_top{
     width: 180px;
     height: 90px;
+    display: none;
   }
   .in_h1_bottom {
     width: 170px;
     height: 80px;
+    display: none;
+  }
+
+  .in_h1_bottom_second_bot {
+    display: initial;
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 20px;
+    vertical-align: middle;
+
+  }
+  .in_h1_bottom_second {
+    width: 170px;
+    height: 80px;
+    display: initial;
   }
   .map {
     order: 3;
@@ -464,6 +527,12 @@ ul {
   border-radius: 200px;
   margin-right: .2em;
 }
+
+.in_h1_bottom_second {
+  object-fit: cover;
+  border-radius: 200px;
+  margin-left: .2em;
+}
 .phonenumber {
   font-size: 1.5rem;
 }
@@ -473,9 +542,6 @@ h1 {
   flex-direction: column;
 }
 
-.h1_bottom_span {
-  text-align: right;
-}
 .phoneimg {
   vertical-align: middle;
   margin-right: 0.5em;
