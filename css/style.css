@@ -31,9 +31,9 @@
 }
 
 :root {
-  --peach-color: #f28c18;
+  --peach-color: #be6c0f;
   --dark-color: #212121;
-  --light-blue-color: #cfcfcf;
+  --light-blue-color: white;
   font-size: 62.5%;
 }
 
